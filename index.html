@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Surprise for Aya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hey Aya! 🌿🌿🌿</h1>
+        <p>dont be sad cz......Click the button!</p>
+        <button onclick="showSurprise()">Click me!</button>
+        <div id="surprise" class="hidden">
+            <img src="WhatsApp Image 2024-11-14 at 3.29.36 PM.jpeg" alt="Aya's special photo" id="photo">
+            <p class="quote">" you’re the prettiest  and the most badnyash person in the entire universe! 🌿🌿🌿🌟 take a sad song and make it better !"</p>
+            <audio id="song">
+                <source src="Beatles - Hey Jude.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <script>
+        function showSurprise() {
+            const surprise = document.getElementById("surprise");
+            const song = document.getElementById("song");
+
+            // Remove the 'hidden' class to display the surprise div
+            surprise.classList.remove("hidden");
+
+            // Play the audio
+            song.play();
+        }
+    </script>
+</body>
+</html>
